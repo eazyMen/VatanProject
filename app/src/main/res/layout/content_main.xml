@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".ui.MainActivity"
+    android:gravity="right">
+
+
+    <Button
+        android:id="@+id/nd"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/nd"
+        android:gravity="right"
+        android:onClick="ndShow"
+        android:translationZ="1dp" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="1dp">
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_above="@+id/level3"
+        android:paddingTop="280dp"
+        android:id="@+id/level2">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="invisible"
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            android:background="@drawable/progress"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center|bottom"
+            android:indeterminateDrawable="@drawable/spiner"
+            android:indeterminateOnly="true"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:layout_marginBottom="-1sp"/>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="170dp"
+            android:background="@drawable/play"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/play_str"
+            android:textColor="#00000000"
+            android:id="@+id/playAndPause"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center|bottom"
+            android:onClick="playAndStop"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:layout_marginBottom="-1sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/level3">
+
+        <Button
+            android:id="@+id/nnt"
+            android:layout_width="@dimen/social_height"
+            android:layout_height="@dimen/social_height"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/nnt"
+            android:onClick="nntShow"/>
+
+        <Button
+            android:id="@+id/fb"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/social_height"
+            android:layout_marginLeft="@dimen/social_margin"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/fb"
+            android:onClick="fbShow" />
+
+        <Button
+            android:id="@+id/vk"
+            android:layout_width="34dp"
+            android:layout_height="@dimen/social_height"
+            android:layout_marginLeft="@dimen/social_margin"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/vk"
+            android:onClick="vkShow" />
+
+        <Button
+            android:id="@+id/instagram"
+            android:layout_width="38dp"
+            android:layout_height="@dimen/social_height"
+            android:layout_marginLeft="@dimen/social_margin"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/instagram"
+            android:onClick="instagramShow"/>
+
+        <Button
+            android:id="@+id/youtube"
+            android:layout_width="@dimen/social_height"
+            android:layout_height="@dimen/social_height"
+            android:layout_marginLeft="@dimen/social_margin"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/youtube"
+            android:onClick="youtubeShow" />
+
+        <Button
+            android:id="@+id/vatan"
+            android:layout_width="@dimen/social_height"
+            android:layout_height="@dimen/social_height"
+            android:layout_marginLeft="@dimen/social_margin"
+            android:background="@drawable/vatan"
+            android:onClick="vatanShow"/>
+
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RadioVatan</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_settings1">Settings1</string>
+    <string name="play_str">1</string>
+    <string name="pause_srt">0</string>
+    <string name="text_info">Приложение находится \n на разработке</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Радио «Ватан»</string>
+    <string name="nav_header_subtitle">http://radiovatan.ru</string>
+</resources>
